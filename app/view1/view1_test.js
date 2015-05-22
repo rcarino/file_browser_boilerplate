@@ -6,6 +6,10 @@ describe('myApp.view1 module', function() {
 
   describe('view1 controller', function(){
 
+    it('should bloop', inject(function(DirectoryBrowser) {
+      expect(DirectoryBrowser.bloop()).toBe('bloop');
+    }));
+
     it('should ....', inject(function($controller) {
       //spec body
       var view1Ctrl = $controller('View1Ctrl');
